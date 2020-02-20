@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Land Boundary Dashboard</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+
+</head>
+
+
+
+<body>
+    
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" style="text-decoration: none" href="index.html">dashboard</a>
+            </div>
+
+            <div id="main-menu" class="main-menu">
+                <h3 class="menu-title">Menu</h3>
+                <ul class="nav navbar-nav">
+                    <li class="menu-item"><a class="active" href="maps.html">Maps</a></li>
+                    <li class="menu-item"><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header -->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                    <div class="col-sm-7">
+                        <div class="header-left float-left">
+                            <div class="page-title">
+                                <h1>Land Boundary Monitoring</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="header-right float-right">
+                            <div class="header-about">
+                                <a href='#'>About</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </header>
+
+        <!-- Header -->
+
+        <!-- Content -->
+        <div class="breadcrumbs">
+            <div class="page-header">
+                <ol class="breadcrumb text-left">
+                    <li class="page-item"><a href="index.html">Homepage</a></li>
+                    <li class="page-item active"><a href="maps.html">Maps</a></li>		
+                </ol>
+            </div>   
+        </div>
+        
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Monitoring Map</h5>
+                            </div>
+                            <div class="gmap_unix card-body">
+                                <div class="map" id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+    
+    <script>
+        // Initialize Firebase
+        const config = {
+            apiKey: "AIzaSyDUJwTtHlJnFc1ZKFVWv1OeZzG0-JIwoOI",
+            authDomain: "boundary-project.firebaseapp.com",
+            databaseURL: "https://boundary-project.firebaseio.com",
+            projectId: "boundary-project",
+            storageBucket: "boundary-project.appspot.com",
+            messagingSenderId: "101368840221",
+            appId: "1:101368840221:web:c00a4694bab2b3b1d586f4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(config);
+    </script>
+    
+    <!-- Google Maps -->
+    <script src="assets/js/maps.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSzjLJGqzLo_4_XbaIcZxxs8X0hZYJG0M&callback=initMap" async defer></script>
+    
+
+
+</body>
+</html>

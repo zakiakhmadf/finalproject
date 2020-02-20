@@ -1,0 +1,190 @@
+
+
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a, button {
+    text-decoration: none;
+    outline: none !important;
+    color: #878787;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Left-Panel*/
+aside.left-panel {
+    background: #272c33;
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    padding: 0 15px;
+    vertical-align: top;
+    width: 200px;
+}
+
+.navbar {
+    background: #272c33;
+    border-radius: 0;
+    border: none;
+    display: block;
+    padding: 0;
+ }
+    .navbar .navbar-header {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar .navbar-brand {
+        border-bottom: 1px solid #4e4e52;
+        color: #e8e9ec;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        float: none;
+        line-height: 70px;
+        margin: 0;
+        display: block;
+        padding: 0;
+        position: relative;
+        text-transform: lowercase;
+    }
+    .navbar .menu-title {
+        border-bottom: 1px solid #4e4e52;
+        color: #9496a1;
+        clear: both;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 45px;
+        padding: 7px 0 0;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .navbar .navbar-nav {
+        float: none;
+        padding: 0;
+        position: relative;
+    }
+    .navbar .navbar-nav .menu-item {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+    .navbar .navbar-nav .menu-item a {
+        text-decoration: none;
+        background: none;
+        color: #c8c9ce !important;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    
+/* Right Panel */
+.right-panel {
+    display: table-cell;
+    padding-left: 0;
+    width: 100%;
+}
+    .right-panel .breadcrumbs {
+        background-color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 0 5px;
+        width: 100%;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+    .right-panel .page-header {
+        min-height: 50px;
+        margin: 0;
+        padding: 0 15px;
+        background: #ffffff;
+        border-bottom: 0; 
+    }
+    .right-panel .page-header .breadcrumb {
+        margin: 0;
+        padding: 13.5px 0;
+        background: #fff;
+        text-transform: capitalize;
+    }
+    .breadcrumbs .breadcrumb .page-item a {
+        text-decoration: none;
+        color: rgb(70, 70, 70);
+        font-size: 14px;
+    }
+    .right-panel .page-header .breadcrumb :active{
+        color: black;
+    }
+    .right-panel .page-header .breadcrumb > li + li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0"; 
+    }
+
+/* Header */
+.header {
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    clear: both;
+    display: inline-block;
+    padding: 13px 15px 10px;
+    width: 100%;
+}
+    .header .col-sm-7 {
+        float: left;
+    }
+    .header .col-sm-5 {
+        float: right;
+    }
+    .header-menu .page-title h1 {
+        font-size: 32px;
+        padding: 9px 0px;
+        margin: 0;
+    }
+    .header-menu .header-right {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 0px;
+    }
+    .header .header-right a {
+        padding: 0 20px;
+        margin: 0;
+        text-decoration: none;
+        color: #272c33;
+    }
+
+/* Content */
+.map {
+    height: 500px;
+    width: 100%;
+}
+
+.jumbotron {
+    height: max-content;
+    background-size: cover;
+    background-image: url(../../images/background2.jpg);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+    .jumbotron .container {
+        padding: 90px;
+        text-shadow: 0.25px 0.25px 0.25px;
+        color: #000000;
+    }
+    .jumbotron .container h1 {
+        font-weight: 400;
+    }
+    .jumbotron .container h4 {
+        font-weight: 350;
+    }
+    .jumbotron .container p {
+        font-weight: 300;
+        padding: 10px;
+        font-size: 18px;
+    }
+
